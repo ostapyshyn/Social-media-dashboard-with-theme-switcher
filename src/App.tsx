@@ -1,9 +1,15 @@
 import styles from './App.module.scss'
+import DayCard from './components/DayCard'
+import Header from './components/Header'
+import SocialCard from './components/SocialCard'
 
 function App() {
   return (
     <main className={styles.App}>
-      <div>Test 777</div>
+      <Header />
+      <SocialCard />
+      <h2>Overview - Today</h2>
+      <DayCard />
     </main>
   )
 }
