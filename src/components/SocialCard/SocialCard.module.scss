@@ -1,0 +1,40 @@
+.card {
+  background: #252b42;
+  border-radius: 5px;
+  max-width: 255px;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 24px;
+  border-top: 4px solid #178ff5;
+  .user {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #8c98c6;
+    margin-bottom: 28px;
+  }
+  .followers {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -2px;
+    margin-bottom: 9px;
+  }
+  .description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  .result {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+  }
+}
