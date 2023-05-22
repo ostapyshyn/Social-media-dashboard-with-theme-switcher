@@ -1,0 +1,35 @@
+.dayCard {
+  background: #252b42;
+  border-radius: 5px;
+  max-width: 255px;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 31px;
+  .data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .number {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 39px;
+      color: #ffffff;
+    }
+    .result {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: right;
+      color: #1eb589;
+    }
+  }
+  .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8c98c6;
+    margin-bottom: 21px;
+  }
+}

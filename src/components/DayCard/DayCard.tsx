@@ -2,9 +2,12 @@ import styles from './DayCard.module.scss'
 
 const DayCard = () => {
   return (
-    <section>
-      <h2>Page Views</h2>
-      <p>87</p>
+    <section className={styles.dayCard}>
+      <h2 className={styles.title}>Page Views</h2>
+      <div className={styles.data}>
+        <p className={styles.number}>87</p>
+        <p className={styles.result}>3%</p>
+      </div>
     </section>
   )
 }
