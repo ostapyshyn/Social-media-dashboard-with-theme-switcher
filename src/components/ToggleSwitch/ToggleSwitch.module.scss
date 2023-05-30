@@ -1,0 +1,47 @@
+@import '../../index.scss';
+
+.toggleSwitch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.5;
+  }
+  margin-right: 0px;
+}
+
+.toggleSwitch input[type='checkbox'] {
+  display: none;
+}
+.toggleSwitch .switch {
+  position: absolute;
+  cursor: pointer;
+  background: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
+  border-radius: 12px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: background-color 0.2s ease;
+}
+.toggleSwitch .switch::before {
+  position: absolute;
+  content: '';
+  left: 3px;
+  top: 3px;
+  width: 18px;
+  height: 18px;
+  background: #252b42;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.toggleSwitch input[type='checkbox']:checked + .switch::before {
+  transform: translateX(24px);
+  background: #252b42;
+}
+.toggleSwitch input[type='checkbox']:checked + .switch {
+  background: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
+}

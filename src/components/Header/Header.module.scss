@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 46px;
+  max-width: 1110px;
+  .title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 3px;
+  }
+  .switcher {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+  .subtitle,
+  .darkMode {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8c98c6;
+  }
+}
