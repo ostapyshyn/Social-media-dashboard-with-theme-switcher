@@ -8,19 +8,28 @@
 }
 
 :root {
-  --blue: hsl(246, 80%, 60%);
-  --light_redd: hsl(15, 100%, 70%);
-  --soft_blue: hsl(195, 74%, 62%);
-  --light_red: hsl(348, 100%, 68%);
-  --lime_green: hsl(145, 58%, 55%);
-  --violet: hsl(264, 64%, 52%);
-  --soft_orange: hsl(43, 84%, 65%);
-  --very_dark_blue: hsl(226, 43%, 10%);
-  --dark_blue: hsl(235, 46%, 20%);
-  --desaturated_blue: hsl(235, 45%, 61%);
-  --pale_blue: hsl(236, 100%, 87%);
-  --hover_blue: hsla(236, 41%, 34%, 1);
-  --white: #fff;
+  /* Primary */
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);
+
+  --facebook: hsl(208, 92%, 53%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram-start: hsl(37, 97%, 70%);
+  --instagram-end: hsl(329, 70%, 58%);
+  --youtube: hsl(348, 97%, 39%);
+
+  /* Dark theme */
+  --toggle-dark-start: hsl(210, 78%, 56%);
+  --toggle-dark-end: hsl(146, 68%, 55%);
+
+  /* Light theme */
+  --toggle-light: hsl(230, 22%, 74%);
+
+  --bg: white;
+  --top-bg: hsl(225, 100%, 98%);
+  --card-bg: hsl(227, 47%, 96%);
+  --text: hsl(228, 12%, 44%);
+  --text-2: hsl(230, 17%, 14%);
 }
 
 :root {
@@ -107,3 +116,16 @@ ol {
   margin: 0;
   padding: 0;
 }
+
+// .facebook::before {
+//   background: var(--facebook);
+// }
+// .twitter::before {
+//   background: var(--twitter);
+// }
+// .instagram::before {
+//   background: linear-gradient(to right, var(--instagram-start), var(--instagram-end));
+// }
+// .youtube::before {
+//   background: var(--youtube);
+// }

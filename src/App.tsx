@@ -11,7 +11,16 @@ function App() {
       <Header />
       <section className={styles.cards}>
         {mainCards.map((card) => (
-          <SocialCard key={card.id} {...card} />
+          <SocialCard
+            key={card.id}
+            target={card.target}
+            followText={card.followText}
+            userName={card.userName}
+            image={card.image}
+            color={card.color}
+            icon={card.icon}
+            media={card.media}
+          />
         ))}
       </section>
 

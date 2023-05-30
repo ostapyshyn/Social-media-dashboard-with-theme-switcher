@@ -1,19 +1,27 @@
 .card {
+  position: relative;
   background: #252b42;
   border-radius: 5px;
   max-width: 255px;
   width: 100%;
   padding-top: 32px;
   padding-bottom: 24px;
-  border-top: 4px solid #178ff5;
-  .user {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-    color: #8c98c6;
+
+  .userData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 28px;
+    .user {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      color: #8c98c6;
+      margin-left: 8px;
+    }
   }
+
   .followers {
     font-weight: 700;
     font-size: 56px;
@@ -39,4 +47,27 @@
     text-align: center;
     color: #1eb589;
   }
+}
+
+.card::before {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 100%;
+  height: 0.3rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background: red;
+}
+
+.facebook::before {
+  background: var(--facebook);
+}
+.twitter::before {
+  background: var(--twitter);
+}
+.instagram::before {
+  background: linear-gradient(to right, var(--instagram-start), var(--instagram-end));
+}
+.youtube::before {
+  background: var(--youtube);
 }
