@@ -24,7 +24,7 @@ function App() {
         ))}
       </section>
 
-      <h2>Overview - Today</h2>
+      <h2 className={styles.title}>Overview - Today</h2>
 
       <section className={styles.dayCards}>
         {dayliCards.map((card) => (

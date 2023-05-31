@@ -12,7 +12,7 @@ interface Props {
 const SocialCard = ({ target, followText, userName, image, icon, media }: Props) => {
   console.log(media)
 
-  const classes = classNames(media, {
+  const classes = classNames({
     [styles.card]: true,
     [styles.facebook]: media === 'facebook',
     [styles.twitter]: media === 'twitter',

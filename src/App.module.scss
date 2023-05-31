@@ -20,5 +20,15 @@
     flex-wrap: wrap;
     row-gap: 24px;
     column-gap: 30px;
+    max-width: 1110px;
+  }
+  .title {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffffff;
+    width: 100%;
+    max-width: 1110px;
   }
 }
