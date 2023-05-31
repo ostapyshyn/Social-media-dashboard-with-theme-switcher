@@ -20,6 +20,7 @@ function App() {
             color={card.color}
             icon={card.icon}
             media={card.media}
+            followToday={card.followToday}
           />
         ))}
       </section>
@@ -28,7 +29,14 @@ function App() {
 
       <section className={styles.dayCards}>
         {dayliCards.map((card) => (
-          <DayCard key={card.id} {...card} />
+          <DayCard
+            key={card.id}
+            target={card.target}
+            image={card.image}
+            title={card.title}
+            icon={card.icon}
+            percentage={card.percentage}
+          />
         ))}
       </section>
     </main>

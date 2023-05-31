@@ -8,9 +8,10 @@ interface Props {
   color: string
   icon: string
   media: string
+  followToday: string
 }
-const SocialCard = ({ target, followText, userName, image, icon, media }: Props) => {
-  console.log(media)
+const SocialCard = ({ target, followText, userName, image, icon, media, followToday }: Props) => {
+  console.log(icon.includes('up'))
 
   const classes = classNames({
     [styles.card]: true,
@@ -29,7 +30,14 @@ const SocialCard = ({ target, followText, userName, image, icon, media }: Props)
 
       <h2 className={styles.followers}>{target}</h2>
       <p className={styles.description}>{followText}</p>
-      <p className={styles.result}>12 Today</p>
+      <div className={styles.data_follow}>
+        <img src={icon} alt="icon" />
+        <p
+          className={styles.result}
+          style={icon.includes('up') ? { color: '#1EB589' } : { color: '#DC414C' }}>
+          {followToday}
+        </p>
+      </div>
     </section>
   )
 }

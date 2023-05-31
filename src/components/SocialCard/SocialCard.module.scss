@@ -41,12 +41,18 @@
     margin-bottom: 25px;
     color: #8c98c6;
   }
-  .result {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-    color: #1eb589;
+  .data_follow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .result {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      color: #1eb589;
+      margin-left: 2px;
+    }
   }
 }
 

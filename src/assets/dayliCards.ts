@@ -33,10 +33,10 @@ const secondaryCards = [
   {
     id: 4,
     title: 'Profile Views',
-    percentage: '2257%',
+    percentage: '1375%',
     image: instagramImg,
     icon: iconUp,
-    target: 52,
+    target: '52k',
     letter: 'k',
   },
   {

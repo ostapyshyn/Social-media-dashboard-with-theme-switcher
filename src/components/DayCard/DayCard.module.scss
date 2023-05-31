@@ -3,27 +3,41 @@
   border-radius: 5px;
   max-width: 255px;
   width: 100%;
-  padding-top: 32px;
-  padding-bottom: 24px;
+  padding-top: 25px;
+  padding-bottom: 21px;
   padding-left: 24px;
   padding-right: 31px;
-  
-  .data {
+
+  .about {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 21px;
+  }
+
+  .data {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     .number {
       font-weight: 700;
       font-size: 32px;
       line-height: 39px;
       color: #ffffff;
     }
-    .result {
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 15px;
-      text-align: right;
-      color: #1eb589;
+
+    .per_data {
+      display: flex;
+      align-items: center;
+
+      .result {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: right;
+        color: #1eb589;
+        margin-left: 2px;
+      }
     }
   }
   .title {
@@ -31,6 +45,5 @@
     font-size: 14px;
     line-height: 17px;
     color: #8c98c6;
-    margin-bottom: 21px;
   }
 }
