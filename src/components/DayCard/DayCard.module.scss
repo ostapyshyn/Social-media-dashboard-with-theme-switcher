@@ -1,3 +1,5 @@
+@import '../../index.scss';
+
 .dayCard {
   background: #252b42;
   border-radius: 5px;
@@ -7,6 +9,13 @@
   padding-bottom: 21px;
   padding-left: 24px;
   padding-right: 31px;
+  &:hover {
+    background: #333a55;
+    cursor: pointer;
+  }
+  @include mq(1157px) {
+    max-width: 326px;
+  }
 
   .about {
     display: flex;

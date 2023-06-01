@@ -1,3 +1,5 @@
+@import '../../index.scss';
+
 .card {
   position: relative;
   background: #252b42;
@@ -6,7 +8,14 @@
   width: 100%;
   padding-top: 32px;
   padding-bottom: 24px;
-  margin-bottom: 46px;
+  @include mq(1157px) {
+    max-width: 326px;
+  }
+
+  &:hover {
+    background: #333a55;
+    cursor: pointer;
+  }
 
   .userData {
     display: flex;

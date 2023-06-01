@@ -10,6 +10,7 @@ const Header = () => {
         <h1 className={styles.title}>Social Media Dashboard</h1>
         <p className={styles.subtitle}>Total Followers: 23,004</p>
       </div>
+      <hr className={styles.line} />
       <div className={styles.switcher}>
         <p className={styles.darkMode}>Dark Mode</p>
         <ToggleSwitch onChange={setIsToggled} value={isToggled} />

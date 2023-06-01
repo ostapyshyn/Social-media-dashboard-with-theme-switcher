@@ -1,9 +1,11 @@
+@import './index.scss';
+
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
   width: 100%;
   margin: auto;
   .cards {
@@ -12,6 +14,10 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    margin-bottom: 46px;
+    @include mq(1157px) {
+      gap: 24px;
+    }
   }
   .dayCards {
     display: flex;
@@ -21,6 +27,9 @@
     row-gap: 24px;
     column-gap: 30px;
     max-width: 1110px;
+    @include mq(1157px) {
+      gap: 16px;
+    }
   }
   .title {
     margin-bottom: 24px;

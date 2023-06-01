@@ -95,7 +95,12 @@ body {
   margin: 0;
   padding: 0;
   padding-inline: 24px;
+  padding-top: 36px;
+  padding-bottom: 45px;
   min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 h1,
