@@ -8,6 +8,15 @@
   height: auto;
   width: 100%;
   margin: auto;
+  background-color: var(--body_bg_color);
+
+  // padding-inline: 24px;
+  // padding-top: 36px;
+  // padding-bottom: 45px;
+  // min-height: 100vh;
+  // display: grid;
+  // align-items: center;
+  // justify-content: center;
   .cards {
     display: flex;
     width: 100%;

@@ -16,7 +16,7 @@ const Header: React.FC = () => {
       <hr className={styles.line} />
       <div className={styles.switcher}>
         <p className={styles.darkMode}>Dark Mode</p>
-        <ToggleSwitch onChange={setIsToggled} value={isToggled} changeTheme={modeChanger} />
+        <ToggleSwitch onChange={setIsToggled} value={isToggled} />
       </div>
     </section>
   )
