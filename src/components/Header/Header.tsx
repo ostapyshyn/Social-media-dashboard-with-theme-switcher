@@ -1,9 +1,12 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import ToggleSwitch from '../ToggleSwitch'
 import styles from './Header.module.scss'
+import ThemeContext from '../../context/ThemeContext'
 
-const Header = () => {
+const Header: React.FC = () => {
   const [isToggled, setIsToggled] = useState(true)
+  const { modeChanger } = useContext(ThemeContext)
+
   return (
     <section className={styles.header}>
       <div>
@@ -13,7 +16,7 @@ const Header = () => {
       <hr className={styles.line} />
       <div className={styles.switcher}>
         <p className={styles.darkMode}>Dark Mode</p>
-        <ToggleSwitch onChange={setIsToggled} value={isToggled} />
+        <ToggleSwitch onChange={setIsToggled} value={isToggled} changeTheme={modeChanger} />
       </div>
     </section>
   )

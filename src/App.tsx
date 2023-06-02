@@ -4,10 +4,15 @@ import Header from './components/Header'
 import SocialCard from './components/SocialCard'
 import mainCards from './assets/mainCards'
 import dayliCards from './assets/dayliCards'
+import ThemeContext from './context/ThemeContext'
+import { useContext } from 'react'
 
 function App() {
+  const { lightMode } = useContext(ThemeContext)
+  console.log(lightMode)
+
   return (
-    <main className={styles.App}>
+    <main className={styles.App} data-theme={`${lightMode ? 'dark' : null}`}>
       <Header />
       <section className={styles.cards}>
         {mainCards.map((card) => (

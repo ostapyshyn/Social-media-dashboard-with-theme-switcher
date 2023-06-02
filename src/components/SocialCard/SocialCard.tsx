@@ -11,8 +11,6 @@ interface Props {
   followToday: string
 }
 const SocialCard = ({ target, followText, userName, image, icon, media, followToday }: Props) => {
-  console.log(icon.includes('up'))
-
   const classes = classNames({
     [styles.card]: true,
     [styles.facebook]: media === 'facebook',

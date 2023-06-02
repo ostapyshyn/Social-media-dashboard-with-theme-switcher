@@ -3,9 +3,14 @@ import styles from './ToggleSwitch.module.scss'
 interface Props {
   value: boolean
   onChange: (id: boolean) => void
+  changeTheme: () => void
 }
-function ToggleSwitch({ onChange, value }: Props) {
-  const onToggled = () => onChange(!value)
+function ToggleSwitch({ onChange, value, changeTheme }: Props) {
+  const onToggled = () => {
+    onChange(!value)
+    changeTheme()
+    
+  }
 
   return (
     <label className={styles.toggleSwitch}>
