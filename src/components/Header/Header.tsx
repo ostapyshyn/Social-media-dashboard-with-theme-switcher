@@ -2,7 +2,7 @@ import { useState } from 'react'
 import ToggleSwitch from '../ToggleSwitch'
 import styles from './Header.module.scss'
 import { useTheme } from '../../hooks/use-theme'
-// import ThemeContext from '../../context/ThemeContext'
+import ThemeContext from '../../context/ThemeContext'
 
 const Header: React.FC = () => {
   const { theme } = useTheme()
