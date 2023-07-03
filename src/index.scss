@@ -11,7 +11,7 @@ html[data-theme='dark'] {
   --button-text-color: #ffffff;
   --button-background-color: #4e005c;
   --button-border-color: #ba8fc2;
-
+  --title: #ffffff;
   --background-color: #292929;
   --icon-color: #ba8fc2;
 }
@@ -21,7 +21,7 @@ html[data-theme='light'] {
   --button-text-color: #252525;
   --button-background-color: #f9d4ff;
   --button-border-color: #4e005c;
-
+  --title: #1d1f29;
   --background-color: #dfdfdf;
   --icon-color: #4e005c;
 }
@@ -38,7 +38,7 @@ html[data-theme='light'] {
   --instagram-end: hsl(329, 70%, 58%);
   --youtube: hsl(348, 97%, 39%);
 
-  /* Dark theme */
+  /* Dark theme
   --toggle-dark-start: hsl(210, 78%, 56%);
   --toggle-dark-end: hsl(146, 68%, 55%);
 

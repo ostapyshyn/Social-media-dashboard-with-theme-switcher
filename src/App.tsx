@@ -6,13 +6,15 @@ import mainCards from './assets/mainCards'
 import dayliCards from './assets/dayliCards'
 import ThemeContext from './context/ThemeContext'
 import { useContext } from 'react'
+import { useTheme } from './hooks/use-theme'
 
 function App() {
-  const { lightMode } = useContext(ThemeContext)
-  console.log(lightMode)
+  // const { lightMode } = useContext(ThemeContext)
+  // console.log(lightMode)
+  const { theme, setTheme } = useTheme()
 
   return (
-    <main className={styles.App} data-theme={`${lightMode ? 'dark' : null}`}>
+    <main className={styles.App} data-theme={`${theme ? 'dark' : null}`}>
       <Header />
       <section className={styles.cards}>
         {mainCards.map((card) => (

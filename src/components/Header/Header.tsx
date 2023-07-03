@@ -1,11 +1,13 @@
-import { useContext, useState } from 'react'
+import { useState } from 'react'
 import ToggleSwitch from '../ToggleSwitch'
 import styles from './Header.module.scss'
-import ThemeContext from '../../context/ThemeContext'
+import { useTheme } from '../../hooks/use-theme'
+// import ThemeContext from '../../context/ThemeContext'
 
 const Header: React.FC = () => {
-  const [isToggled, setIsToggled] = useState(true)
-  const { modeChanger } = useContext(ThemeContext)
+  const { theme } = useTheme()
+  const [isToggled, setIsToggled] = useState(theme === 'light' ? true : false)
+  // const { modeChanger } = useContext(ThemeContext)
 
   return (
     <section className={styles.header}>
