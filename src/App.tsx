@@ -9,12 +9,8 @@ import { useContext } from 'react'
 import { useTheme } from './hooks/use-theme'
 
 function App() {
-  // const { lightMode } = useContext(ThemeContext)
-  // console.log(lightMode)
-  const { theme, setTheme } = useTheme()
-
   return (
-    <main className={styles.App} data-theme={`${theme ? 'dark' : null}`}>
+    <main className={styles.App}>
       <Header />
       <section className={styles.cards}>
         {mainCards.map((card) => (
