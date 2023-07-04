@@ -14,6 +14,11 @@ html[data-theme='dark'] {
   --title: #ffffff;
   --background-color: #292929;
   --icon-color: #ba8fc2;
+  --sub_title: #8c98c6;
+  --toggle_color: #252b42;
+  --toggle_background: #40db82;
+  --toggle_background_two: #388fe7;
+  --user_name_color: #8c98c6;
 }
 
 html[data-theme='light'] {
@@ -24,6 +29,11 @@ html[data-theme='light'] {
   --title: #1d1f29;
   --background-color: #dfdfdf;
   --icon-color: #4e005c;
+  --sub_title: #848bab;
+  --toggle_color: #f1f3fa;
+  --toggle_background: #aeb3cb;
+  --toggle_background_two: #aeb3cb;
+  --user_name_color: #63687d;
 }
 
 :root {

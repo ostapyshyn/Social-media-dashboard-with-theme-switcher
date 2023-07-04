@@ -4,9 +4,6 @@ import Header from './components/Header'
 import SocialCard from './components/SocialCard'
 import mainCards from './assets/mainCards'
 import dayliCards from './assets/dayliCards'
-import ThemeContext from './context/ThemeContext'
-import { useContext } from 'react'
-import { useTheme } from './hooks/use-theme'
 
 function App() {
   return (

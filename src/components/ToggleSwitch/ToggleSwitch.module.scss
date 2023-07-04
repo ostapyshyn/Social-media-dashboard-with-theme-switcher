@@ -19,7 +19,11 @@
 .toggleSwitch .switch {
   position: absolute;
   cursor: pointer;
-  background: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
+  background: linear-gradient(
+    225deg,
+    var(--toggle_background) 0%,
+    var(--toggle_background_two) 98.02%
+  );
   border-radius: 12px;
   top: 0;
   right: 0;
@@ -34,14 +38,18 @@
   top: 3px;
   width: 18px;
   height: 18px;
-  background: #252b42;
+  background: var(--toggle_color);
   border-radius: 50%;
   transition: transform 0.3s ease;
 }
 .toggleSwitch input[type='checkbox']:checked + .switch::before {
   transform: translateX(24px);
-  background: #252b42;
+  background: var(--toggle_color);
 }
 .toggleSwitch input[type='checkbox']:checked + .switch {
-  background: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%);
+  background: linear-gradient(
+    225deg,
+    var(--toggle_background) 0%,
+    var(--toggle_background_two) 98.02%
+  );
 }
