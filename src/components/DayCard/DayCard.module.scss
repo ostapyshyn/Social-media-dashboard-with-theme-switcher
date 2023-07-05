@@ -1,7 +1,7 @@
 @import '../../index.scss';
 
 .dayCard {
-  background: #252b42;
+  background: var(--toggle_color);
   border-radius: 5px;
   max-width: 255px;
   width: 100%;
@@ -10,7 +10,7 @@
   padding-left: 24px;
   padding-right: 31px;
   &:hover {
-    background: #333a55;
+    background: var(--hover_card);
     cursor: pointer;
   }
   @include mq(1157px) {
@@ -32,7 +32,7 @@
       font-weight: 700;
       font-size: 32px;
       line-height: 39px;
-      color: #ffffff;
+      color: var(--title);
     }
 
     .per_data {
@@ -53,6 +53,6 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-    color: #8c98c6;
+    color: var(--user_name_color);
   }
 }

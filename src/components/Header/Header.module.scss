@@ -49,7 +49,12 @@
       width: 100%;
     }
   }
-  .subtitle,
+  .subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--user_name_color);
+  }
   .darkMode {
     font-weight: 700;
     font-size: 14px;

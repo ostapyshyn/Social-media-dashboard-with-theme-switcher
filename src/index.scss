@@ -19,6 +19,10 @@ html[data-theme='dark'] {
   --toggle_background: #40db82;
   --toggle_background_two: #388fe7;
   --user_name_color: #8c98c6;
+  --title_section: #ffffff;
+  --hover_card: #333a55;
+  --hover_toggle_one: #40db82;
+  --hover_toggle_two: #388fe7;
 }
 
 html[data-theme='light'] {
@@ -34,6 +38,10 @@ html[data-theme='light'] {
   --toggle_background: #aeb3cb;
   --toggle_background_two: #aeb3cb;
   --user_name_color: #63687d;
+  --title_section: #63687d;
+  --hover_card: #e1e4f0;
+  --hover_toggle_one: #40db82;
+  --hover_toggle_two: #388fe7;
 }
 
 :root {
@@ -142,7 +150,25 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--body_bg_color);
+  position: relative;
+  // background: linear-gradient(
+  //   hsl(225, 100%, 98%) 0%,
+  //   hsl(225, 100%, 98%) 20%,
+  //   hsl(0, 0%, 100%) 20%,
+  //   hsl(0, 0%, 100%) 100%
+  // );
+  background-color: var(--body_bg_color);
 }
+// body::before {
+//   --radius: 1.5em;
+//   content: '';
+//   position: absolute;
+//   width: 100%;
+//   height: 15em;
+//   z-index: -1;
+//   border-radius: 0 0 var(--radius) var(--radius);
+//   transition: background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+// }
 
 h1,
 h2,

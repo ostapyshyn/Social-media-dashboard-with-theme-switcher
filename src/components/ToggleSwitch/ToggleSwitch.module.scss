@@ -6,9 +6,9 @@
   width: 48px;
   height: 24px;
 
-  transition: 0.3s;
+  transition: 0.5s;
   &:hover {
-    opacity: 0.5;
+    opacity: 0.9;
   }
   margin-right: 0px;
 }
@@ -29,7 +29,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.9s ease;
 }
 .toggleSwitch .switch::before {
   position: absolute;
@@ -47,9 +47,16 @@
   background: var(--toggle_color);
 }
 .toggleSwitch input[type='checkbox']:checked + .switch {
+  transition: 0.5s;
   background: linear-gradient(
     225deg,
     var(--toggle_background) 0%,
     var(--toggle_background_two) 98.02%
   );
+}
+.switch {
+  transition: 0.5s;
+}
+.toggleSwitch input[type='checkbox']:checked + .switch:hover {
+  background: linear-gradient(225deg, var(--hover_toggle_one) 0%, var(--hover_toggle_two) 98.02%);
 }

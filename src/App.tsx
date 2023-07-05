@@ -8,6 +8,7 @@ import dayliCards from './assets/dayliCards'
 function App() {
   return (
     <main className={styles.App}>
+      {/* <div>1</div> */}
       <Header />
       <section className={styles.cards}>
         {mainCards.map((card) => (
