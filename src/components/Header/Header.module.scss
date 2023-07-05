@@ -9,6 +9,7 @@
   @include mq(729px) {
     margin-bottom: 40px;
   }
+  z-index: 1;
 
   .line {
     display: none;
